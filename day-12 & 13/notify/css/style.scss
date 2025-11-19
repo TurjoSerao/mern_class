@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: helveticaNeue;
+  src: url("../fonts/HelveticaNeueRoman.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helveticaNeue;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.banner {
+  width: 100%;
+  background: url("../images/banner.webp");
+  background-size: cover;
+  border-top: 10px solid #2ecc71;
+  > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    > div {
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        > h1 {
+          font-family: Pacifico;
+          color: #fff;
+          font-size: 60px;
+          font-weight: normal;
+          > span {
+            color: #2ecc71;
+            font-family: inherit;
+          }
+        }
+        > p {
+          font-size: 24px;
+          color: #fff;
+        }
+        > ul {
+          list-style: none;
+          display: flex;
+          gap: 14px;
+          > li {
+            width: 52px;
+            border-radius: 50%;
+            background: #000;
+            opacity: 50%;
+            > a {
+              text-decoration: none;
+              color: #fff;
+              line-height: 52px;
+              display: block;
+              text-align: center;
+              font-size: 24px;
+            }
+            &:hover {
+              background: #2ecc71;
+              opacity: 100%;
+            }
+          }
+        }
+      }
+      &:last-child {
+        padding-top: 95px;
+        > img {
+          margin-bottom: -4px;
+        }
+      }
+    }
+  }
+}
+
+.banner-bottom {
+  > .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // grid-template-columns: repeat(3, minmax(auto, 330px));
+    > div {
+      text-align: center;
+      padding: 60px 20px;
+      > figure {
+        width: 98px;
+        height: 98px;
+        background: #2dcb71;
+        color: white;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin: auto;
+        font-size: 44px;
+      }
+      > h3 {
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 20px 0;
+        color: #222;
+      }
+      > p {
+        font-size: 18px;
+        line-height: 26px;
+        color: #848484;
+        font-family: "Helvetica Neue";
+        text-align: center;
+      }
+    }
+  }
+}
+
+.cta {
+  background: #E3E3E3;
+  padding: 60px 0;
+  > .container {
+    display: grid;
+    grid-template-columns: minmax(auto, 540px) max-content;
+    justify-content: space-between;
+    // gap: 60px;
+    // align-items: center;
+    > div {
+      > h3 {
+        font-size: 22px;
+        line-height: 18px;
+        color: #222222;
+        font-weight: 600;
+        font-family: "Raleway";
+        // padding-bottom: 10px;
+      }
+      > p {
+        width: 540px;
+        padding: 30px 0;
+        font-size: 16px;
+        line-height: 26px;
+        color: #848484;
+        font-family: "Helvetica Neue";
+      }
+      > form {
+        width: 446px;
+        height: 56px;
+        display: flex;
+        > input[type="email"] {
+          width: 305px;
+          border: 1px solid white;
+          border-radius: 10px 0 0 10px;
+          padding: 0 10px;
+          &::placeholder {
+            font-size: 18px;
+          }
+        }
+        > button {
+          padding: 10px 20px;
+          background: #2dcb71;
+          color: #fff;
+          font-size: 18px;
+          border-radius: 0 10px 10px 0;
+          border: 1px solid #2dcb71;
+        }
+      }
+    } > .video {
+      // width: 400px;
+      height: 300px;
+    }
+  }
+}
+
+
+.footer {
+  >.container {
+    text-align: center;
+    padding-top: 60px;
+    > p{
+      font-size: 18px;
+      font-family: raleway;
+      padding: 20px 0;
+    }
+    > h3 {
+      font: 32px;
+      padding-bottom: 20px;
+      > img {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

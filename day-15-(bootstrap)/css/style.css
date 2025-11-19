@@ -1,0 +1,21 @@
+.carousel-item {
+  height: 550px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.274);
+  padding: 20px;
+  border-radius: 10px;
+  color: #2c2c2c;
+}

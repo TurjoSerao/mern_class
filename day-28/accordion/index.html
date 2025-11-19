@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="container mx-auto min-h-screen grid place-content-center gap-4">
+        <div class="accordion border w-96">
+        <div class="head border-b p-3 font-bold bg-black text-white cursor-pointer relative before:content-['-'] before:absolute before:h-full before:ratio-1x1 before:text-white before:top-0 before:right-2 before:text-center before:grid before:place-items-center">What is your name?</div>
+        <div class="details px-3 py-3 max-h-max overflow-hidden transition-all duration-500">My name is Turjo</div>
+    </div>
+    <div class="accordion border w-96">
+        <div class="head border-b p-3 font-bold hover:bg-gray-300 cursor-pointer relative before:content-['+'] before:absolute before:h-full before:ratio-1x1 before:text-black before:top-0 before:right-2 before:text-center before:grid before:place-items-center">What is your city?</div>
+        <div class="details py-0 px-3 max-h-0 overflow-hidden transition-all duration-500 hidden">My city is Khulna</div>
+    </div>
+    <div class="accordion border w-96">
+        <div class="head border-b p-3 font-bold hover:bg-gray-300 cursor-pointer relative before:content-['+'] before:absolute before:h-full before:ratio-1x1 before:text-black before:top-0 before:right-2 before:text-center before:grid before:place-items-center">What is your name?</div>
+        <div class="details py-0 px-3 max-h-0 overflow-hidden transition-all duration-500 hidden">My city is Dhaka</div>
+    </div>
+    </div>
+
+    <!-- Script -->
+     <script src="script.js"></script>
+  </body>
+</html>

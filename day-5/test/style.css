@@ -1,0 +1,24 @@
+.main {
+    width: 300px;
+    height: 150px;
+    /* border: 1px solid black; */
+}
+
+
+.color1 {
+    background-color: black;
+    width: 300px;
+    height: 50px;
+}
+
+.color2 {
+    background-color: red;
+    width: 300px;
+    height: 50px;
+}
+
+.color3 {
+    background-color: yellow;
+    width: 300px;
+    height: 50px;
+}

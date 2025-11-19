@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container min-h-screen mx-auto grid place-items-center">
+    <div class="w-96 md:w-1/2 xl:w-2/3 border p-4 rounded shadow">
+      <form action="" id="taskForm" class="flex w-full">
+        <input type="text" placeholder="Task"
+          class="rounded-l border border-r-0 px-4 grow focus:outline-none">
+        <button type="button"
+          class="border px-6 py-3 rounded-r cursor-pointer hover:bg-black hover:text-white hover:border-black">
+          Add task
+        </button>
+      </form>
+      <div class="text-sm text-red-600 mb-3" id="errMsg"></div>
+
+      <!-- Task List -->
+      <ul id="showtask"
+        class="grid gap-2 *:even:bg-gray-200 *:p-2 *:flex *:justify-between *:items-center *:hover:bg-gray-300 *:gap-4">
+
+        <li class="flex justify-between items-center">
+          <span>Hello There</span>
+          <div>
+            <button
+              class="aspect-square cursor-pointer bg-green-600 text-white mt-1 hover:bg-green-200 disabled:bg-gray-500">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button
+              class="aspect-square cursor-pointer bg-red-600 text-white hover:bg-red-300 mt-1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </li>
+
+        <li class="flex justify-between items-center">
+          <span>Lorem ipsum dolor sit amet.</span>
+          <div>
+            <button
+              class="aspect-square cursor-pointer bg-green-600 text-white mt-1 hover:bg-green-200 disabled:bg-gray-500">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button
+              class="aspect-square cursor-pointer bg-red-600 text-white hover:bg-red-300 mt-1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </li>
+
+        <li class="flex justify-between items-center">
+          <span class="line-through text-gray-400">Already Completed</span>
+          <div>
+            <button
+              class="aspect-square cursor-pointer bg-green-600 text-white mt-1 hover:bg-green-200 disabled:bg-gray-500"
+              disabled>
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button
+              class="aspect-square cursor-pointer bg-red-600 text-white hover:bg-red-300 mt-1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

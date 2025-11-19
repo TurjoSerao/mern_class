@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Image Slider</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-full mx-auto h-[80vh] relative overflow-hidden
+      *:absolute *:top-0 *:left-0 *:w-full *:h-full
+      [&>.active]:opacity-100 [&>:not(.active)]:opacity-0
+      *:transition-opacity *:duration-500" id="slider">
+            <div class="active" id="slides">
+                <img src="./image/nature_1.jpg" alt="" class="w-full h-full object-cover object-center" />
+            </div>
+            <div>
+                <img src="./image/nature_2.jpg" alt="" class="w-full h-full object-cover object-center" />
+            </div>
+            <div>
+                <img src="./image/nature_3.jpg" alt="" class="w-full h-full object-cover object-center" />
+            </div>
+            <div>
+                <img src="./image/nature_4.jpg" alt="" class="w-full h-full object-cover object-center" />
+            </div>
+            <div>
+                <img src="./image/nature_5.jpg" alt="" class="w-full h-full object-cover object-center" />
+            </div>
+        </div>
+        <div class="left w-24 bg-stone-600/55 z-20"></div>
+        <div class="right w-24 bg-stone-600/55 z-20"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

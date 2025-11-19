@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.137), rgb(0,0,0 /27%)), url(./pexels-craigmdennis-205421.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px;
+    > h1 {
+        text-align: center;
+        font-size: 52px;
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 40px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.card {
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    > h4 {
+        font-size: 28px;
+        padding: 15px 0;
+    }
+    > p {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 0;
+    }
+}
+
+.icons {
+    font-size: 40px;
+    /* width: 45px;
+    height: 45px; */
+    padding-top: 5px;
+    text-align: center;
+    /* background-color: black; */
+    /* color: white; */
+    border-radius: 50px;
+}
+
